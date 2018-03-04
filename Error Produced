@@ -1,0 +1,21 @@
+File "D:/Study Material/Python 3 Tutorial/PythonScripts/Machine Learning/Neural Network/CNN_Practise.py", line 70, in <module>
+    Train_Convolutional_Neural_Network(X)
+  File "D:/Study Material/Python 3 Tutorial/PythonScripts/Machine Learning/Neural Network/CNN_Practise.py", line 61, in Train_Convolutional_Neural_Network
+    _,Loss = Sess.run([Optimizer,Loss],feed_dict = {X:Epoc_X,Y:Epoc_Y})
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 905, in run
+    run_metadata_ptr)
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 1122, in _run
+    self._graph, fetches, feed_dict_tensor, feed_handles=feed_handles)
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 427, in __init__
+    self._fetch_mapper = _FetchMapper.for_fetch(fetches)
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 245, in for_fetch
+    return _ListFetchMapper(fetch)
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 352, in __init__
+    self._mappers = [_FetchMapper.for_fetch(fetch) for fetch in fetches]
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 352, in <listcomp>
+    self._mappers = [_FetchMapper.for_fetch(fetch) for fetch in fetches]
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 253, in for_fetch
+    return _ElementFetchMapper(fetches, contraction_fn)
+  File "C:\Users\Na462\AppData\Local\Programs\Python\Python35\lib\site-packages\tensorflow\python\client\session.py", line 286, in __init__
+    (fetch, type(fetch), str(e)))
+TypeError: Fetch argument 60857.293 has invalid type <class 'numpy.float32'>, must be a string or Tensor. (Can not convert a float32 into a Tensor or Operation.)
